@@ -218,19 +218,3 @@ ShowLangCenter(lang) {
 
     SetTimer () => MyGui.Destroy(), -400
 }
-
-; ==================================================
-; ДИАГНОСТИКА
-; ==================================================
-F12::
-{
-    current := GetCurrentLayout()
-    if (current = RU_CODE)
-        msg := "РУССКИЙ"
-    else if (current = EN_CODE)
-        msg := "АНГЛИЙСКИЙ"
-    else
-        msg := "НЕИЗВЕСТНЫЙ (код: " current ")"
-
-    MsgBox "Текущий язык: " msg
-}
